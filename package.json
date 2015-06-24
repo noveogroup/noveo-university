@@ -1,0 +1,23 @@
+{
+  "name": "noveo-university",
+  "version": "0.0.1",
+  "description": "Noveo University presentation generator",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/noveogroup/noveo-university.git"
+  },
+  "keywords": [
+    "noveo",
+    "university"
+  ],
+  "author": "Noveo <npm@noveogroup.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noveogroup/noveo-university/issues"
+  },
+  "homepage": "https://github.com/noveogroup/noveo-university#readme"
+}
