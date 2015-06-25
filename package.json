@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Noveo University presentation generator",
   "main": "lib/index.js",
+  "bin": {
+    "noveo-university" : "bin/noveo-university"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,25 +1,46 @@
 #!/usr/bin/env node
 
 var path = require('path');
+var magic = require('../');
 
-var argv = require('yargs')
+var yargs = require('yargs')
+  .usage('Usage: $0 <command> [options]')
   .command('build', 'Build presentation')
-  .command('watch', 'Watch changes, rebuild, and reload')
-  .demand(1)
-  .version(function() {
-    return require('../package').version;
+  .command('watch', 'Watch changes, rebuild, and reload browser')
+  .demand(1, 'You must provide a valid command')
+  .check(function(argv){
+    if(!argv._[0].match(/build|watch/)) {
+      throw new Error('You must provide a valid command');
+    }
+    return true;
   })
-  .argv;
+  .option('i', {
+    alias : 'input',
+    'default': './slides',
+    describe: 'Path to sources'
+  })
+  .option('o', {
+    alias : 'output',
+    'default': './dist',
+    describe: 'Path to destination'
+  })
+  .help('h')
+  .alias('h', 'help')
+  .version(function() {
+    return 'Version: ' + require('../package').version;
+  })
+  .alias('version', 'v');
 
+var argv = yargs.argv;
 var command = argv._[0];
+
 console.dir(argv);
 console.log('command:', command);
 
 var cwd = process.cwd();
-var magic = require('../');
 
-var source = path.join(cwd, './slides');
-var destination = path.join(cwd, './dist');
+var source = path.isAbsolute(argv.input) ? argv.input : path.join(cwd, argv.input);
+var destination = path.isAbsolute(argv.output) ? argv.output : path.join(cwd, argv.output);
 
 switch (command) {
   case 'build':
@@ -40,4 +61,6 @@ switch (command) {
       console.log(message);
     });
     break;
+  default:
+    yargs.showHelp();
 }
