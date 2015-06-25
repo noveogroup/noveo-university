@@ -27,6 +27,7 @@
     "metalsmith-collections": "^0.7.0",
     "metalsmith-markdownit": "^0.1.2",
     "metalsmith-paths": "^2.0.0",
+    "metalsmith-static": "0.0.5",
     "metalsmith-templates": "^0.7.0",
     "minimatch": "^2.0.8",
     "verror": "^1.6.0",

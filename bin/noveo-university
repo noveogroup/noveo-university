@@ -22,7 +22,7 @@ var destination = path.join(cwd, './dist');
 
 switch (command) {
   case 'build':
-    magic.build(source, destination, function(err) {
+    magic.build(source, destination, true, function(err) {
       if (err) {
         console.error(err.message);
       }
