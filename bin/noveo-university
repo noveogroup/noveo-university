@@ -4,6 +4,7 @@ var path = require('path');
 
 var argv = require('yargs')
   .command('build', 'Build presentation')
+  .command('watch', 'Watch changes, rebuild, and reload')
   .demand(1)
   .version(function() {
     return require('../package').version;
@@ -22,11 +23,21 @@ var destination = path.join(cwd, './dist');
 
 switch (command) {
   case 'build':
-    magic.build(source, destination, true, function(err) {
+    magic.build(source, destination, false, function(err) {
       if (err) {
         console.error(err.message);
+        return;
       }
       console.log('Presentation successfully created!');
+    });
+    break;
+  case 'watch':
+    magic.watch(source, destination, function(err, message) {
+      if (err) {
+        console.error(err.message);
+        return;
+      }
+      console.log(message);
     });
     break;
 }
