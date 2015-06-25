@@ -25,7 +25,6 @@
     "jade": "^1.11.0",
     "js-yaml": "^3.3.1",
     "metalsmith": "^1.7.0",
-    "metalsmith-browser-sync": "^1.0.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-markdownit": "^0.1.2",
     "metalsmith-paths": "^2.0.0",
