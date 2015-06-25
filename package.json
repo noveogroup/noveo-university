@@ -32,5 +32,18 @@
     "minimatch": "^2.0.8",
     "verror": "^1.6.0",
     "yargs": "^3.12.0"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "css-mqpacker": "^3.1.0",
+    "csswring": "^3.0.5",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^5.1.9",
+    "gulp-sass": "^2.0.1",
+    "reveal.js": "^3.1.0"
   }
 }
