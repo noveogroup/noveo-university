@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Noveo University</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700,900,400italic|Roboto+Mono:400,400italic&amp;subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/public/styles.css"><!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <!-- Printing and PDF exports-->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '/public/pdf.css' : '/public/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+      
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Example</h1>
+          <h3>Noveo University</h3>
+          <p>Author</p>
+        </section>
+<section><h2>Text</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</section>
+<section><h2>Lists</h2>
+<p>List:</p>
+<ul>
+<li>First</li>
+<li>Second</li>
+</ul>
+<p>Numeric list:</p>
+<ol>
+<li>First</li>
+<li>Second</li>
+</ol>
+
+</section>
+<section><h2>Code</h2>
+<pre><code class="language-js"><span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> linkWithAlert = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"alertLink"</span>);
+  linkWithAlert.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> confirm(<span class="hljs-string">'Вы уверены?'</span>); 
+  };
+};
+</code></pre>
+
+</section>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+    <script src="/public/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        width: 1366,
+        height: 768
+      });
+    </script>
+  </body>
+</html>
