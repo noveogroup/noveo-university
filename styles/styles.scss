@@ -1,10 +1,17 @@
 
-@import "css/reveal.scss";
+@import "reveal.js/css/reveal.scss";
 
-@import "css/theme/template/mixins.scss";
+@import "reveal.js/css/theme/template/mixins.scss";
 
-@import "css/theme/template/settings.scss";
+@import "reveal.js/css/theme/template/settings.scss";
 
 @import "settings.scss";
 
-@import "css/theme/template/theme.scss";
+@import "reveal.js/css/theme/template/theme.scss";
+
+@import "highlight.js/styles/magula";
+
+.reveal pre code {
+  background: #f4f4f4;
+  color: black;
+}

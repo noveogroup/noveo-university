@@ -38,7 +38,7 @@ gulp.task('styles', function() {
     .pipe($.sass({
       outputStyle: 'expanded',
       includePaths: [
-        'node_modules/reveal.js/',
+        'node_modules/',
         'styles/',
       ]
     }))
