@@ -53,3 +53,46 @@
     height: 100%;
   }
 }
+
+.reveal pre {
+  font-family: 'Roboto Mono',monospace;
+}
+.reveal code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.reveal .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 74px;
+  @media screen and (min-width: 768px) {
+    width: 148px;
+    height: 148px;
+  }
+  path {
+    fill: $defaultColor;
+  }
+
+  .type-ios & {
+    path {
+      fill: $iosColor;
+    }
+  }
+  .type-android & {
+    path {
+      fill: $androidColor;
+    }
+  }
+  .type-web & {
+    path {
+      fill: $webColor;
+    }
+  }
+  .type-manager & {
+    path {
+      fill: $managerColor;
+    }
+  }
+}
