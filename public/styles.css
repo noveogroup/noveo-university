@@ -1510,9 +1510,9 @@ body {
 
 .reveal {
   font-family: "Roboto", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
-  color: #333;
+  color: #323335;
 }
 
 ::-moz-selection {
@@ -1543,26 +1543,26 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #222;
+  color: #323335;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: normal;
-  text-transform: uppercase;
+  text-transform: none;
   text-shadow: none;
   word-wrap: break-word;
 }
 
 .reveal h1 {
-  font-size: 3.77em;
+  font-size: 3.32em;
 }
 
 .reveal h2 {
-  font-size: 2.11em;
+  font-size: 2em;
 }
 
 .reveal h3 {
-  font-size: 1.55em;
+  font-size: 1.4em;
 }
 
 .reveal h4 {
@@ -1767,7 +1767,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #333;
+  border: 4px solid #323335;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -1839,4 +1839,205 @@ body {
  *********************************************/
 .reveal .slide-number {
   color: #13DAEC;
+}
+
+/*
+Description: Magula style for highligh.js
+Author: Ruslan Keba <rukeba@gmail.com>
+Website: http://rukeba.com/
+Version: 1.0
+Date: 2009-01-03
+Music: Aphex Twin / Xtal
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background-color: #f4f4f4;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs,
+.hljs-subst {
+  color: black;
+}
+
+.hljs-string,
+.hljs-title,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.apache .hljs-cbracket,
+.coffeescript .hljs-attribute {
+  color: #050;
+}
+
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk {
+  color: #777;
+}
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-name,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.hljs-change,
+.tex .hljs-special {
+  color: #800;
+}
+
+.hljs-label,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-pi,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.hljs-prompt,
+.clojure .hljs-attribute {
+  color: #00e;
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-doctag,
+.hljs-title,
+.hljs-built_in,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.apache .hljs-tag,
+.xml .hljs-tag,
+.tex .hljs-command,
+.hljs-request,
+.hljs-status {
+  font-weight: bold;
+  color: navy;
+}
+
+.nginx .hljs-built_in {
+  font-weight: normal;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}
+
+/* --- */
+.apache .hljs-tag {
+  font-weight: bold;
+  color: blue;
+}
+
+.reveal pre code {
+  background: #f4f4f4;
+  color: black;
+}
+
+.reveal a.university-logo {
+  position: absolute;
+  display: block;
+  z-index: 10;
+  right: 12px;
+  top: 12px;
+  width: 87px;
+  height: 35px;
+}
+
+.reveal a.university-logo:hover img {
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+}
+
+.reveal a.university-logo__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.reveal pre {
+  font-family: 'Roboto Mono',monospace;
+}
+
+.reveal code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.reveal .triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  height: 74px;
+}
+
+.reveal .triangle path {
+  fill: #3f51b5;
+}
+
+.type-ios .reveal .triangle path {
+  fill: #e87e00;
+}
+
+.type-android .reveal .triangle path {
+  fill: #699f00;
+}
+
+.type-web .reveal .triangle path {
+  fill: #662d91;
+}
+
+.type-manager .reveal .triangle path {
+  fill: #ff0024;
+}
+
+@media screen and (min-width: 480px) {
+  .reveal .author_main {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reveal a.university-logo {
+    right: 24px;
+    top: 24px;
+    width: 174px;
+    height: 70px;
+  }
+  .reveal .triangle {
+    width: 148px;
+    height: 148px;
+  }
 }
