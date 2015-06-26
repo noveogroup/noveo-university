@@ -4,8 +4,8 @@ $backgroundColor: #fff;
 
 // Primary/body text
 $mainFont: 'Roboto', sans-serif;
-$mainFontSize: 36px;
-$mainColor: #333;
+$mainFontSize: 30px;
+$mainColor: #323335;
 
 // Vertical spacing between blocks of text
 $blockMargin: 20px;
@@ -13,17 +13,17 @@ $blockMargin: 20px;
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
 $headingFont: 'Roboto', sans-serif;
-$headingColor: #222;
+$headingColor: $mainColor;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: none;
 $headingTextShadow: none;
-$headingFontWeight: 700;
+$headingFontWeight: 500;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.77em;
-$heading2Size: 2.11em;
-$heading3Size: 1.55em;
+$heading1Size: 3.32em;
+$heading2Size: 2em;
+$heading3Size: 1.4em;
 $heading4Size: 1.00em;
 
 // Links and actions

@@ -15,11 +15,14 @@ var paths = {
   scss: {
     src: 'styles/styles.scss',
     watch: 'styles/*.scss'
-  }
+  },
+  svg: [
+    'university-logo.svg'
+  ]
 };
 
 
-gulp.task('build', ['jslint', 'scripts', 'styles', 'copy']);
+gulp.task('build', ['jslint', 'scripts', 'styles', 'copy', 'images']);
 
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
@@ -51,6 +54,12 @@ gulp.task('styles', function() {
         removeAllComments: true
       })*/
     ]))
+    .pipe(gulp.dest(paths.dest));
+});
+
+gulp.task('images', function() {
+  return gulp.src(paths.svg)
+    .pipe($.svgmin())
     .pipe(gulp.dest(paths.dest));
 });
 

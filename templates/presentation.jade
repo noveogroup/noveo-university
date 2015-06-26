@@ -8,8 +8,7 @@ html(lang="ru")
 
     meta(name="apple-mobile-web-app-capable", content="yes")
     meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
-
-    link(href="//fonts.googleapis.com/css?family=Roboto:400,700,900,400italic|Roboto+Mono:400,400italic&subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css")
+    link(href="//fonts.googleapis.com/css?family=Roboto:500,400italic,400|Roboto+Mono:400,700&subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css")
 
     link(rel="stylesheet", href="./public/styles.css")
 
@@ -28,11 +27,13 @@ html(lang="ru")
 
   body
     .reveal
+      a.university-logo(href="http://noveogroup.ru/noveo-university", target="_blank")
+        img.university-logo__image(src="./public/university-logo.svg")
       .slides
         section
           h1=title
           h3=internship
-          p=author
+          h4.author_main= author
         !=contents
 
     script(src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js")
