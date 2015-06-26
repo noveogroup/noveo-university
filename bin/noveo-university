@@ -7,9 +7,10 @@ var yargs = require('yargs')
   .usage('Usage: $0 <command> [options]')
   .command('build', 'Build presentation')
   .command('watch', 'Watch changes, rebuild, and reload browser')
+  .command('publish', 'Build presentation and publish to the gh-pages')
   .demand(1, 'You must provide a valid command')
   .check(function(argv){
-    if(!argv._[0].match(/build|watch/)) {
+    if(!argv._[0].match(/build|watch|publish/)) {
       throw new Error('You must provide a valid command');
     }
     return true;
@@ -56,6 +57,15 @@ switch (command) {
     break;
   case 'watch':
     magic.watch(source, destination, function(err, message) {
+      if (err) {
+        console.error(err.message);
+        return;
+      }
+      console.log(message);
+    });
+    break;
+  case 'publish':
+    magic.publish(source, destination, function(err, message) {
       if (err) {
         console.error(err.message);
         return;

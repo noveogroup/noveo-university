@@ -4,3 +4,5 @@ bower_components
 .tmp
 Thumbs.db
 .DS_Store
+
+dist
