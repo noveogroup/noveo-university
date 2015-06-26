@@ -11,7 +11,7 @@ html(lang="ru")
 
     link(href="//fonts.googleapis.com/css?family=Roboto:400,700,900,400italic|Roboto+Mono:400,400italic&subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css")
 
-    link(rel="stylesheet", href="/public/styles.css")
+    link(rel="stylesheet", href="./public/styles.css")
 
     <!--[if lt IE 9]>
     script(src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
@@ -23,7 +23,7 @@ html(lang="ru")
       var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/public/pdf.css' : '/public/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? './public/pdf.css' : './public/paper.css';
       document.getElementsByTagName('head')[0].appendChild(link);
 
   body
@@ -36,7 +36,7 @@ html(lang="ru")
         !=contents
 
     script(src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js")
-    script(src="/public/reveal.js")
+    script(src="./public/reveal.js")
     script.
       Reveal.initialize({
         width: 1366,
