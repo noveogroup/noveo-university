@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link href="//fonts.googleapis.com/css?family=Roboto:400,700,900,400italic|Roboto+Mono:400,400italic&amp;subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/public/styles.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="./public/styles.css"><!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
     <!-- Printing and PDF exports-->
@@ -16,7 +16,7 @@
       var link = document.createElement('link');
       link.rel = 'stylesheet';
       link.type = 'text/css';
-      link.href = window.location.search.match( /print-pdf/gi ) ? '/public/pdf.css' : '/public/paper.css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? './public/pdf.css' : './public/paper.css';
       document.getElementsByTagName('head')[0].appendChild(link);
       
     </script>
@@ -60,7 +60,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
       </div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
-    <script src="/public/reveal.js"></script>
+    <script src="./public/reveal.js"></script>
     <script>
       Reveal.initialize({
         width: 1366,
