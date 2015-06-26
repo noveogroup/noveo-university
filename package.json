@@ -36,6 +36,7 @@
     "metalsmith-static": "0.0.5",
     "metalsmith-templates": "^0.7.0",
     "minimatch": "^2.0.8",
+    "update-notifier": "^0.5.0",
     "verror": "^1.6.0",
     "yargs": "^3.12.0"
   },

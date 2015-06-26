@@ -2,6 +2,10 @@
 
 var path = require('path');
 var magic = require('../');
+var updateNotifier = require('update-notifier');
+var pkg = require('../package.json');
+
+updateNotifier({pkg: pkg}).notify();
 
 var yargs = require('yargs')
   .usage('Usage: $0 <command> [options]')
@@ -28,7 +32,7 @@ var yargs = require('yargs')
   .help('h')
   .alias('h', 'help')
   .version(function() {
-    return 'Version: ' + require('../package').version;
+    return 'Version: ' + pkg.version;
   })
   .alias('version', 'v');
 
