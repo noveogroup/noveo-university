@@ -4,7 +4,7 @@
   "description": "Noveo University presentation generator",
   "main": "lib/index.js",
   "bin": {
-    "noveo-university" : "bin/noveo-university"
+    "noveo-university": "bin/noveo-university"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/noveogroup/noveo-university#readme",
   "dependencies": {
     "browser-sync": "^2.7.12",
+    "highlight.js": "^8.6.0",
     "jade": "^1.11.0",
     "js-yaml": "^3.3.1",
     "metalsmith": "^1.7.0",

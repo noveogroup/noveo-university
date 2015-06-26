@@ -39,8 +39,10 @@ console.log('command:', command);
 
 var cwd = process.cwd();
 
-var source = path.isAbsolute(argv.input) ? argv.input : path.join(cwd, argv.input);
-var destination = path.isAbsolute(argv.output) ? argv.output : path.join(cwd, argv.output);
+var source =
+  path.isAbsolute(argv.input) ? argv.input : path.join(cwd, argv.input);
+var destination =
+  path.isAbsolute(argv.output) ? argv.output : path.join(cwd, argv.output);
 
 switch (command) {
   case 'build':
